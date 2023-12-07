@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senha Segura</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main class="main">
+    <form class="form">
+      <h1>Senhas Segura</h1>
+      <div class="password">
+        <input type="text" id="password" maxlength="16" readonly />
+        <button class="copy_btn"><i class="fa-regular fa-copy"></i></button>
+        <button class="generate_btn"><i class="fa-solid fa-rotate"></i></button>
+        <div id="success_popup" class="popup">
+          <div class="popup_content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Copiado com sucesso!</p>
+          </div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <label for="password_length">Numero de caracteres:</label>
+        <input class="input_number" type="number" id="password_length" min="1" max="16" value="12" />
+        <input class="input_range" type="range" id="password_range" min="1" max="16" value="12" />
+      </div>
+      <p>
+        Para maior segurança, use o gerenciador do seu navegador
+        para salvar suas senhas. Clique e copie a senha, e quando
+        for utilizar escreva mais alguma coisa no final para mais segurança.
+      </p>
+    </form>
+  </main>
+  <script defer src="script.js"></script>
+</body>
+
+</html>
