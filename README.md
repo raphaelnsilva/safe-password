@@ -25,7 +25,7 @@ To use the Safe Password Generator project on your local machine, you can follow
 Open your terminal or command prompt and run the following command to clone the repository:
 
 ```bash
-git clone https://github.com/seu-usuario/safe-password.git
+git clone https://github.com/raphaelnsilva/safe-password.git
 ````
 
 ### Navigate to the Project Directory
@@ -40,7 +40,7 @@ cd safe-password
 
 Locate the index.html file in the project directory and open it in your preferred web browser. You can do this by double-clicking the file or right-clicking and selecting "Open with."
 
-## How to Contribute to the Safe Password Generator Project
+## How to Contribute
 
 ### 1.  Make and test your changes
 * Make the desired changes to the code, adding features, fixing bugs, or improving documentation.
