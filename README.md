@@ -6,6 +6,10 @@ Safe Password Generator is a web application designed to help users create secur
 random passwords. The application provides a user-friendly interface where users can 
 generate passwords of varying lengths and copy them to their clipboard for easy use.
 
+<div align="center">
+  <img src="https://github.com/raphaelnsilva/safe-password/assets/129803784/a32f357c-8ece-46e2-a97c-5fc1c8c09730" width="700px" />
+</div>
+
 The project consists of three main files:
 
 1. `index.html`: HTML file defining the structure and layout of the web page.
