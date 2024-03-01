@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
   <title>Senha Segura</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta content="O Senha Segura é uma página web desenvolvida para ajudar os usuários a criar senhas seguras e aleatórias." name="description">
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
   <main class="main">
-    <form class="form">
+    <section class="section">
       <h1>Senha Segura</h1>
       <div class="password">
-        <input type="text" id="password" maxlength="16" readonly />
-        <button class="copy_btn"><i class="fa-regular fa-copy"></i></button>
+        <input id="password" maxlength="16" readonly type="text">
+        <button class="copy_btn"><i class="fa-regular fa-copy"></i></button> 
         <button class="generate_btn"><i class="fa-solid fa-rotate"></i></button>
-        <div id="success_popup" class="popup">
+        <div class="popup" id="success_popup">
           <div class="popup_content">
             <span class="close" onclick="closePopup()">&times;</span>
             <p>Copiado com sucesso!</p>
@@ -27,18 +24,14 @@
         </div>
       </div>
       <div class="toolbar">
-        <label for="password_length">Número de caracteres:</label>
-        <input class="input_number" type="number" id="password_length" min="1" max="16" value="12" />
-        <input class="input_range" type="range" id="password_range" min="1" max="16" value="12" />
+        <span>Número de caracteres:</span> 
+        <input class="input_number" id="password_length" max="16" min="1" type="number" value="12"> 
+        <input class="input_range" id="password_range" max="16" min="1" type="range" value="12">
       </div>
-      <p>
-        Para maior segurança, use o gerenciador do seu navegador
-        para salvar suas senhas. Clique e copie a senha, e quando
-        for utilizar escreva mais alguma coisa no final para mais segurança.
-      </p>
-    </form>
+      <p>Para maior segurança, use o gerenciador do seu navegador para salvar suas senhas. Clique e copie a senha, e quando for utilizar escreva mais alguma coisa no final para mais segurança.</p>
+    </section>
   </main>
-  <script defer src="script.js"></script>
+  <script defer src="script.js">
+  </script>
 </body>
-
 </html>

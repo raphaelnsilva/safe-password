@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
 :root {
   --bg-color: #fcf6ff;
   --text-color: #2b2d42;
   --highlight-color: #0075FF;
   --border: #bebebe;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -17,29 +15,24 @@
   color: var(--text-color);
   background-color: var(--bg-color);
 }
-
 button {
   border: 0;
   padding-left: 1rem;
 }
-
 i {
   font-size: 1.5rem;
 }
-
 i:hover {
   cursor: pointer;
   color: var(--highlight-color);
 }
-
 .main {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.form {
+.section {
   height: 500px;
   width: 90%;
   max-width: 600px;
@@ -51,35 +44,29 @@ i:hover {
   gap: 3rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-
-.form h1 {
+.section h1 {
   font-size: 2rem;
 }
-
-.form p {
+.section p {
   width: 70%;
   text-align: center;
   font-size: 0.9rem;
   color: #2b2d4274;
 }
-
 .password {
   display: flex;
   border: 1px solid var(--border);
   padding: 1rem;
   margin: 0 1rem;
 }
-
 .password:hover {
   border: 1px solid var(--highlight-color);
 }
-
 .password input {
   font-size: 1.2rem;
   border: none;
   width: 100%
 }
-
 .popup {
   display: none;
   position: fixed;
@@ -92,11 +79,9 @@ i:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
-
 .popup_content p {
   margin: auto;
 }
-
 .close {
   position: absolute;
   top: 5px;
@@ -104,7 +89,6 @@ i:hover {
   font-size: 2rem;
   cursor: pointer;
 }
-
 .toolbar {
   display: flex;
   flex-direction: column;
@@ -112,47 +96,36 @@ i:hover {
   gap: 2rem;
   font-size: 2rem;
 }
-
 .input_number {
   border: 1px solid var(--border);
   padding: 1rem;
   width: 40px;
   margin: auto;
 }
-
 .input_number:hover {
   border: 1px solid var(--highlight-color);
 }
-
 .input_range {
   cursor: pointer;
 }
-
 @media (min-width: 600px) {
-
   i {
     font-size: 2rem;
   }
-
-  .form h1 {
+  .section h1 {
     font-size: 3rem;
   }
-
-  .form p {
+  .section p {
     font-size: 1.3rem;
   }
-
   .password {
     padding: 2rem;
   }
-
   .password input {
     font-size: 2.2rem;
     font-weight: 400;
   }
-
   .toolbar {
     font-size: 2.5rem;
   }
-
 }

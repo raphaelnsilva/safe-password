@@ -1,11 +1,9 @@
 "use strict";
-
 const passwordInput = document.querySelector('#password');
 const passwordLengthInput = document.querySelector('#password_length');
 const passwordRangeInput = document.querySelector('#password_range');
 const copyBtn = document.querySelector('.copy_btn');
 const generateBtn = document.querySelector('.generate_btn');
-
 // Função para exibir uma popup de sucesso por 3 segundos
 function displaySuccessPopup() {
   const successPopup = document.querySelector('#success_popup');
@@ -14,13 +12,11 @@ function displaySuccessPopup() {
     closePopup();
   }, 3000);
 };
-
 // Função para fechar a popup de sucesso
 function closePopup() {
   const successPopup = document.querySelector('#success_popup');
   successPopup.style.display = 'none';
 };
-
 // Função para gerar uma senha aleatória de acordo com o comprimento fornecido
 function generateRandomString(length) {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_+=[]{}|;:,.<>?/';
@@ -31,12 +27,10 @@ function generateRandomString(length) {
   };
   return result;
 };
-
 // Função para copiar a senha para a área de transferência
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text);
 };
-
 // Função para atualizar o campo de senha com uma nova senha gerada
 function updatePassword() {
   const length = parseInt(passwordLengthInput.value);
@@ -45,9 +39,7 @@ function updatePassword() {
     passwordInput.value = generatedPassword;
   };
 };
-
 window.onload = () => {
-
   // Event listener para a mudança no comprimento da senha
   passwordLengthInput.addEventListener('input', (e) => {
     e.preventDefault();
@@ -61,7 +53,6 @@ window.onload = () => {
       updatePassword();
     };
   });
-
   // Event listener para a mudança no range de comprimento da senha
   passwordRangeInput.addEventListener('input', (e) => {
     e.preventDefault();
@@ -69,7 +60,6 @@ window.onload = () => {
     passwordLengthInput.value = value;
     updatePassword();
   });
-
   // Event listener para o botão de cópia da senha
   copyBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -77,13 +67,11 @@ window.onload = () => {
     copyToClipboard(passwordValue);
     displaySuccessPopup();
   });
-
   // Event listener para o botão de geração da senha
   generateBtn.addEventListener('click', (e) => {
     e.preventDefault();
     updatePassword();
   });
-
   // Inicializa a senha
   updatePassword();
 };
